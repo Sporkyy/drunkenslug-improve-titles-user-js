@@ -10,14 +10,15 @@
 // ==/UserScript==
 
 (() => {
-  const betterTitle = (() => {
-    const search = document.querySelector('#search');
-    if (!!search) return `🔎 🙶${search.value}🙷`;
-    const active = document.querySelector('.breadcrumb .active');
-    if (!!active) return `${active.textContent.trim()}`;
-    const h2 = document.querySelector('h2');
-    if (!!h2) return `${h2.textContent.trim()}`;
-  })();
+  const qs = (s, p = document) => p.querySelector(s);
 
-  if (!!betterTitle) window.document.title = `${betterTitle} - DS`;
+  const wd = window.document;
+
+  const search = qs('#search');
+  const active = qs('.breadcrumb .active');
+  const h2 = qs('h2');
+
+  if (search) wd.title = `🔎 🙶${search.value}🙷`;
+  else if (active) wd.title = `${active.textContent.trim()}`;
+  else if (h2) wd.title = `${h2.textContent.trim()}`;
 })();
