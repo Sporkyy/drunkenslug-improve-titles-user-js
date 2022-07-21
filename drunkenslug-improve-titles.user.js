@@ -1,12 +1,15 @@
 // ==UserScript==
 // @name        DrunkenSlug - Improve Titles
-// @namespace   Violentmonkey Scripts
+// @namespace   https://github.com/Sporkyy/
 // @match       https://drunkenslug.com/*
 // @icon        https://www.google.com/s2/favicons?domain=drunkenslug.com
+// @run-at      document-idle
 // @grant       none
 // @version     1.0
-// @author      -
-// @description 6/12/2021, 9:06:43 PM
+// @author      Sporkyy
+// @icon        https://www.google.com/s2/favicons?sz=64&domain=drunkenslug.com
+// @description Improves tht titles of pages on DrunkenSlug
+// @noframes
 // ==/UserScript==
 
 (() => {
