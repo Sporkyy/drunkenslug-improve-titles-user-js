@@ -1,19 +1,16 @@
 // ==UserScript==
-// @name        DrunkenSlug - Improve Titles
-// @namespace   https://github.com/Sporkyy/
-// @match       https://drunkenslug.com/*
-// @icon        https://www.google.com/s2/favicons?domain=drunkenslug.com
-// @run-at      document-idle
-// @grant       none
-// @version     1.0
-// @author      Sporkyy
-// @icon        https://www.google.com/s2/favicons?sz=64&domain=drunkenslug.com
-// @description Improves tht titles of pages on DrunkenSlug
-// @noframes
+// @name         DrunkenSlug - Improve Titles
+// @namespace    https://github.com/Sporkyy/
+// @version      1.0.2
+// @description  Improves tht titles of pages on DrunkenSlug
+// @author       Sporkyy
+// @match        https://drunkenslug.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=drunkenslug.com
+// @grant        none
 // ==/UserScript==
 
 (() => {
-  const qs = (s, p = document) => p.querySelector(s);
+  const qs = (s, c = document) => c.querySelector(s);
 
   const wd = window.document;
 
